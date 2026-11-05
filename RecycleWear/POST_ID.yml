@@ -1,0 +1,26 @@
+info:
+  name: POST_ID
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:3000/produtos
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Regata Mar Azul",
+        "descricao": "Regata feita com plástico retirado do oceano",
+        "tamanho": "M",
+        "cor": "Azul",
+        "preco": 69.90,
+        "quantidade_estoque": 30
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

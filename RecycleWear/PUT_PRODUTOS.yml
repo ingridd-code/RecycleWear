@@ -1,0 +1,25 @@
+info:
+  name: PUT_PRODUTOS
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:3000/produtos/1
+  body:
+    type: json
+    data: |
+      {
+        "nome": "Camiseta Ocean Reciclada",
+        "descricao": "Camiseta feita com plástico reciclado retirado do oceano (Edição Especial)",
+        "tamanho": "M",
+        "cor": "Azul Marinho",
+        "preco": 84.90,
+        "quantidade_estoque": 45
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

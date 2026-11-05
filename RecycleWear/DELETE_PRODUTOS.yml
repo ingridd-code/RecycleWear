@@ -1,0 +1,17 @@
+info:
+  name: DELETE_PRODUTOS
+  type: http
+
+http:
+  method: DELETE
+  url: http://localhost:3000/produtos/2
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
